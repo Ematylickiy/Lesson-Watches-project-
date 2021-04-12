@@ -1,0 +1,379 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.background_black {
+  background-color: $background_black;
+}
+.background_gray {
+  background-color: $background_gray;
+}
+
+.bold_text {
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+.text_white {
+  color: $color_white;
+  text-transform: uppercase;
+}
+.f-sz-30 {
+  font-size: $font_size;
+}
+
+.watches_with_logo {
+  font-size: 14px;
+  color: $color_gray;
+  letter-spacing: -0.5px;
+  font-style: italic;
+}
+
+.wrapper {
+  width: 83%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  .header_wrapper {
+    padding: 20px 0;
+    align-items: center;
+    .description_project {
+      color: $color_gray;
+      font-size: 14px;
+    }
+    .menu {
+      width: 20%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.title_page {
+  margin-top: 70px;
+
+  .background_watches_silver {
+    background-image: url("images/background-watches-silver.png");
+    background-position: top 120px left 570px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+  }
+  .menu_navigation {
+    padding: 58px 0 33px 0;
+    align-items: center;
+    .logotip {
+      width: 100%;
+      max-width: 280px;
+      letter-spacing: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        letter-spacing: -2px;
+      }
+    }
+    .nav {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      letter-spacing: -0.5px;
+      a {
+        font-size: 18px;
+        text-decoration: none;
+        &:hover {
+          color: gold;
+        }
+      }
+      span {
+        color: #977869;
+        text-decoration: underline;
+        &:hover {
+          color: rgb(255, 0, 43);
+        }
+      }
+    }
+    .contact_number {
+      width: 20%;
+      max-width: 200px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 24px;
+      letter-spacing: -1px;
+      @media (max-width: 1210px) {
+        width: 40%;
+      }
+
+      .phone {
+        background-image: url("images/phone.png");
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  .main_info {
+    width: 45%;
+    padding-top: 100px;
+    margin-left: 130px;
+
+    .custom_watches {
+      font-size: 60px;
+      margin-bottom: 67px;
+    }
+    .m-rl {
+      margin-right: 35px;
+    }
+    .button {
+      margin-bottom: 225px;
+      padding: 23px 35px;
+      font-size: 16px;
+      background: transparent;
+      color: #977869;
+      border: 1px solid #977869;
+      cursor: pointer;
+      &:hover {
+        background-color: #977869;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.page_store {
+  .background_watches {
+    background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)),
+      url("images/watches.png");
+    background-size: 70%;
+    padding: 200px 150px 150px 750px;
+    background-repeat: no-repeat;
+    .description_store {
+      width: 100%;
+      max-width: 600px;
+      font-size: 18px;
+      line-height: 30px;
+      color: $color_gray;
+      .text_ourStore {
+        color: #ffffff;
+        font-size: 40px;
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+
+.page_product {
+  padding-bottom: 60px;
+  .menu_product {
+    padding: 92px 0 68px 0;
+    p {
+      font-size: 40px;
+    }
+    .menu_latest_popular {
+      width: 15%;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        font-size: 18px;
+        text-decoration: none;
+        &:hover {
+          color: gold;
+        }
+      }
+    }
+  }
+  .select_product {
+    .block_product {
+      border: 1px solid #ffffff;
+      width: 30%;
+      text-align: center;
+      .pictures {
+        width: 247px;
+        height: 384px;
+        margin: 60px auto;
+      }
+      .adriactica {
+        background-image: url("images/adriactica.png");
+      }
+
+      .firm_watches {
+        font-size: 20px;
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+      }
+      .price {
+        font-size: 20px;
+        color: #b6907e;
+        margin-bottom: 30px;
+      }
+      .seiko {
+        background-image: url("images/seiko.png");
+      }
+      .roamer {
+        background-image: url("images/roamer.png");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.background_gray {
+  .brands {
+    padding: 100px 0;
+    align-items: center;
+    .parameters_brand {
+      width: 20%;
+      background-repeat: no-repeat;
+      filter: grayscale(100%);
+      filter: brightness(0) invert(1);
+    }
+    .rado {
+      background-image: url("images/rado.png");
+      height: 68px;
+    }
+    .swatch {
+      background-image: url("images/swatch.png");
+      height: 39px;
+    }
+    .omega {
+      background-image: url("images/omega.png");
+      height: 77px;
+    }
+    .zenith {
+      background-image: url("images/zenith.png");
+      height: 84px;
+    }
+  }
+}
+
+.avatar {
+  margin-right: 40px;
+  background-size: cover;
+  width: 125px;
+  height: 115px;
+  border-radius: 3px;
+}
+.name {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.comment {
+  width: 350px;
+  color: $color_gray;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.wrapper_customer {
+  .wrapper_reviews {
+    width: 83%;
+    margin: 0 auto;
+    padding-top: 91px;
+    padding-bottom: 200px;
+    h3 {
+      text-align: center;
+      font-size: 44px;
+      margin-bottom: 120px;
+    }
+    .reviews {
+      display: flex;
+      justify-content: space-between;
+      .customer {
+        width: 45%;
+        display: flex;
+        .avatar_amanda {
+          background-image: url("images/amanda.png");
+        }
+        .avatar_sandra {
+          background-image: url("images/sandra.png");
+        }
+      }
+    }
+  }
+}
+
+.background_gray {
+  background-color: $background_gray;
+  .wrapper_footer {
+    padding: 90px 0 70px;
+    .footer_logotip {
+      .logo {
+        margin-bottom: 23px;
+      }
+    }
+    .footer_nav {
+      width: 24%;
+      .menu {
+        margin-bottom: 50px;
+      }
+      .select_menu {
+        display: flex;
+        justify-content: space-between;
+        p {
+          font-size: 16px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+    .newsletter {
+      p {
+        margin-bottom: 43px;
+      }
+      .field {
+        background: transparent;
+        height: 51px;
+        width: 250px;
+        padding-left: 20px;
+        font-size: 16px;
+        border: 1px solid #2b2b2b;
+        color: blanchedalmond;
+      }
+      .btn {
+        background: #b6907e;
+        height: 51px;
+        width: 120px;
+        color: rgb(94, 25, 0);
+        font-size: 1rem;
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(220, 207, 20);
+          color: rgb(248, 239, 239);
+        }
+      }
+    }
+  }
+  .footer_contact {
+    p {
+      color: white;
+      font-size: 16px;
+      padding-bottom: 70px;
+    }
+    .social_network {
+      .symbol {
+        width: 20px;
+        height: 20px;
+        filter: grayscale(100%);
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+// @media (max-width: 1350px) {
+//   .customer {
+//     background: white;
+//     display: block;
+//   }
+// }
